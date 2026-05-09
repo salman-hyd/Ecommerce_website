@@ -10,7 +10,7 @@ const cartRoutes = require('./src/routes/cartRoutes');
 const orderRoutes = require('./src/routes/OrderRoutes');
 const cors = require('cors');
 const reviewRoutes = require("./src/routes/reviewRoutes");
-
+const paymentRoutes = require("./src/routes/paymentRoutes");
 
 
 app.use(cors());
@@ -30,7 +30,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
 app.use("/api/wishlist", wishlistRoutes);
 app.use("/api/reviews", reviewRoutes);
-
+app.use("/api/payments", paymentRoutes);
 
 
 // ✅ Start server
